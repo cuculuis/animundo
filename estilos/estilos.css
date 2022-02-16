@@ -621,167 +621,167 @@ div div span {
         background-position: center;
         background-size: cover; 
         background-repeat: no-repeat;
-       padding-top: 5rem;
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-content: flex-start;
-   }
-   
-   /*Titulo y contenido del HeroSec*/
-   .TitHero {
-       font-size: 4rem;
-       color: #9CE3FF;
-   }
-   
-   section div p {
-       color: #FFDBDF;
-       font-size: 2rem;
-       justify-items: left;
-   }
-   
-   /*Boton del HeroSec*/
-   .hsButtom {
-       margin-top: 1.5rem;
-       padding: 1.2em;
-       font-size: 1.2em;
-       color: #FFDBDF;
-   }
-   
-   
-   /*Sección de noticias y anime*/
-   .secAniNew {
-       display: flex;
-       flex-direction:column-reverse;
-       justify-content: center;
-       align-items: center;
-       width: 100%;
-   }
-   
-   /*Sección noticias*/
-   .newsAni {
-       display: flex;
-       flex-direction: column;
-       width: 100%;
-       padding: 2rem;
-       font-family: Verdana, Geneva, Tahoma, sans-serif;
-       font-size: 3rem;
-   }
-   
-   .newsButtom {
-       display: inline-block;
-       padding: 1rem;
-       font-size: 1.2rem;
-       background-color: #000;
-       color: #9CE3FF;
-   }
-   
-   
-   /*Ultimos animes*/
-   .aniNew {
-       display: grid;
-       grid-template-columns: auto auto auto;
-       grid-template-rows: auto auto;
-       width: 100%;
-       padding: 5rem;
-       border-bottom: 1px solid #fff;
-   }
-   
-   .subTitle {
-       grid-area: 1 / 4 span;
-       justify-content: center;
-       font-size: 2rem;
-       color: #E173EB;
-       font-family: 'Roboto', sans-serif;
-   }
-   
-   .animeNew1, .animeNew2, .animeNew3 {
-       margin: 1rem;
-   }
-   
-   .titAnimenew {
-       color: #E173EB;
-       font-family:'Roboto', sans-serif;
-   }
-   
-   div div span {
-       display: inline-block;
-       font-size: 1.2rem;
-       color: #465DC2;
-   }
-   
-   /*Imagenes de anime*/
-   .imgInd {
-       width: 100%;
-   }
-   /*Fin del contenido index*/
-   
-   /*Contenido Anime*/
-   .vidAni {
-       display: grid;
-       grid-template-columns: repeat(3, 1fr);
-       grid-gap: 5px;
-       justify-content: center;
-       align-items: center;
-   }
-   
-   .titAnimenew {
-       font-size: rem;
-   }
+        padding-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: flex-start;
+    }
+    
+    /*Titulo y contenido del HeroSec*/
+    .TitHero {
+        font-size: 4rem;
+        color: #9CE3FF;
+    }
+    
+    section div p {
+        color: #FFDBDF;
+        font-size: 2rem;
+        justify-items: left;
+    }
+    
+    /*Boton del HeroSec*/
+    .hsButtom {
+        margin-top: 1.5rem;
+        padding: 1.2em;
+        font-size: 1.2em;
+        color: #FFDBDF;
+    }
+    
+    
+    /*Sección de noticias y anime*/
+    .secAniNew {
+        display: flex;
+        flex-direction:column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    /*Sección noticias*/
+    .newsAni {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 2rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 3rem;
+    }
+    
+    .newsButtom {
+        display: inline-block;
+        padding: 1rem;
+        font-size: 1.2rem;
+        background-color: #000;
+        color: #9CE3FF;
+    }
+    
+    
+    /*Ultimos animes*/
+    .aniNew {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        width: 100%;
+        padding: 5rem;
+        border-bottom: 1px solid #fff;
+    }
+    
+    .subTitle {
+        grid-area: 1 / 4 span;
+        justify-content: center;
+        font-size: 2rem;
+        color: #E173EB;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .animeNew1, .animeNew2, .animeNew3 {
+        margin: 1rem;
+    }
+    
+    .titAnimenew {
+        color: #E173EB;
+        font-family:'Roboto', sans-serif;
+    }
+    
+    div div span {
+        display: inline-block;
+        font-size: 1.2rem;
+        color: #465DC2;
+    }
+    
+    /*Imagenes de anime*/
+    .imgInd {
+        width: 100%;
+    }
+    /*Fin del contenido index*/
+    
+    /*Contenido Anime*/
+    .vidAni {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .titAnimenew {
+        font-size: rem;
+    }
 
-   .aniTitle {
-       grid-area: 1 / 3 span;
-       font-size: 2rem;
-       color: #E173EB;
-   }
-   
-   .anime1, .anime2, .anime3, .anime4, .anime5, .anime6 {
-       text-align: center;
-   }
-   
-   /*Fin del contenido de Anime*/
-   
-   /*Contenido de noticia*/
-   /*Sección ultimas noticias*/
-   .ultNot {
-       display: flex;
-       flex-direction: column;
-   }
-   
-   .ultNot h1 {
-       font-size: 2rem;
-   }
-   
-   .ultNot p {
-       font-size: 1.5rem;
-       color: #000;
-   }
-   
-   .vidNot {
-       width: 100%;
-   }
-   
-   /*Noticia destacada*/
-   .notDest {
-       display: flex;
-       flex-direction: column;
-       background-color: #465DC2;
-       padding: 5rem;
-       width: 100%;
-   }
-   
-   .notDest h3 {
-       grid-column: 1 / 2 span;
-       grid-row: 1fr
-   }
-   /*Fin de contenido de Noticias*/
-   
-   /*Contenido Contacto*/
-   /*Formulario*/
-   .fomCon {
-       background-color: #AB51FF;
-       font-size: 2rem;
-   }
-   /*Fin del contenido de contacto*/
-   }
-   
+    .aniTitle {
+        grid-area: 1 / 3 span;
+        font-size: 2rem;
+        color: #E173EB;
+    }
+    
+    .anime1, .anime2, .anime3, .anime4, .anime5, .anime6 {
+        text-align: center;
+    }
+    
+    /*Fin del contenido de Anime*/
+    
+    /*Contenido de noticia*/
+    /*Sección ultimas noticias*/
+    .ultNot {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .ultNot h1 {
+        font-size: 2rem;
+    }
+    
+    .ultNot p {
+        font-size: 1.5rem;
+        color: #000;
+    }
+    
+    .vidNot {
+        width: 100%;
+    }
+    
+    /*Noticia destacada*/
+    .notDest {
+        display: flex;
+        flex-direction: column;
+        background-color: #465DC2;
+        padding: 5rem;
+        width: 100%;
+    }
+    
+    .notDest h3 {
+        grid-column: 1 / 2 span;
+        grid-row: 1fr
+    }
+    /*Fin de contenido de Noticias*/
+    
+    /*Contenido Contacto*/
+    /*Formulario*/
+    .fomCon {
+        background-color: #AB51FF;
+        font-size: 2rem;
+    }
+    /*Fin del contenido de contacto*/
+    }
+    
