@@ -296,6 +296,12 @@ div div span {
 }
 /*Fin del contenido de contacto*/
 
+/*Contenido de Politica de Privacidad*/
+.reglasdelaPag {
+    color: #fff;
+    text-align: justify;
+}
+
 /****MEDIA QUERYS****/
 /*Para el movil*/
 @media only screen and (max-width:425px) {
