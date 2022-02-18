@@ -197,20 +197,17 @@ div div span {
 /*Imagenes de anime*/
 .imgInd {
     width: 50%;
+    justify-content: center;
 }
 /*Fin del contenido index*/
 
 /*Contenido Anime*/
 .vidAni {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
 }
 
 .aniTitle {
-    grid-area: 1 / 3 span;
-    grid-template-columns: 3vw;
     font-size: 2.5rem;
     color: #E173EB;
 }
