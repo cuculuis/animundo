@@ -284,16 +284,17 @@ div div span {
 }
 /*Fin del contenido de contacto*/
 
-/*Contenido de Politica de Privacidad*/
+/*Contenido de Politica de Privacidad, Cookies y Aviso-Legal*/
 .reglasdelaPag {
     color: #fff;
+    font-size: 1.6rem;
     text-align: justify;
 }
 
 /****MEDIA QUERYS****/
 /*Para el movil*/
 @media only screen and (max-width:425px) {
- /*Header y el nav*/
+/*Header y el nav*/
 .cbz__nav {
     display: flex;
     flex-direction: column;
@@ -514,7 +515,7 @@ div div span {
 
 /*Contenido de Estrenos*/
 .estrenos ul li {
-    color: #FFDBDF;
+    color: #080808;
 }
 
 /*Noticia destacada*/

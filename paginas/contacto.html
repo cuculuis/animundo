@@ -25,7 +25,7 @@
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav text-center">
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                         </li>
@@ -57,60 +57,68 @@
             </nav>
     </header>
     <main>
-        <section class="row fomCon">
-            <h1 class="h1">Queremos saber tu opinión</h1>
-            <form>
-                <!--Nombre y apellido del usuario-->
-                <div class="col">
+        <section class="container-fluid fomCon">
+            <div class="row">
+                <h1 class="h1">Queremos saber tu opinión</h1>
+                <form>
+                    <!--Nombre y apellido del usuario-->
                     <div class="col">
-                        <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                        </div>
                     </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                    
+                    <!--Sexo del usuario-->
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Femenino
+                        </label>
                     </div>
-                </div>
-                
-                <!--Sexo del usuario-->
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
-                        Femenino
-                    </label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                    <label class="form-check-label" for="flexRadioDefault2">
-                        Masculino
-                    </label>
-                </div>
-                
-                <!--Email del usuario-->
-                <div class="mb-3">
-                    <label for="" class="form-label">Email</label>
-                    <input type="email" placeholder="Correo electronico"class="form-control" id="" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Masculino
+                        </label>
+                    </div>
+                    
+                    <!--Email del usuario-->
+                    <div class="mb-3">
+                        <label for="" class="form-label">Email</label>
+                        <input type="email" placeholder="Correo electronico"class="form-control" id="" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                    
                     <!--Edad del usuario-->    
-                </div>
-                    <select id="inputState" class="form-select">
-                        <option disable selected>Edad</option>
-                        <option value="">0 a 18</option>
-                        <option value="">18 a 30</option>
-                        <option value="">Más de 30</option>
-                    </select>
-                
-                
-                <!--Boton de check-->
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                        Acepto los terminos y condiciones.
-                    </label>
-                </div>
-                <!--Boton de enviar-->
-                <button type="submit" class="btn btn-outline-dark">Enviar</button>
+                    </div>
+                        <select id="inputState" class="form-select">
+                            <option disable selected>Edad</option>
+                            <option value="">0 a 18</option>
+                            <option value="">18 a 30</option>
+                            <option value="">Más de 30</option>
+                        </select>
+                    
+                    <!--Sugerencia del usuario-->
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Cuentanos cómo fue tu experiencia y qué te gustaría que mejoremos</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+    
+                    <!--Boton de check-->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Acepto los terminos y condiciones.
+                        </label>
+                    </div>
+                    
+                    <!--Boton de enviar-->
+                    <button type="submit" class="btn btn-outline-dark">Enviar</button>
                 </form>
+            </div>
         </section>
     </main>
     
