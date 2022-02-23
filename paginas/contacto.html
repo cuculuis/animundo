@@ -57,10 +57,11 @@
             </nav>
     </header>
     <main>
-        <section class="fomCon">
+        <section class="row fomCon">
+            <h1 class="h1">Queremos saber tu opinión</h1>
             <form>
                 <!--Nombre y apellido del usuario-->
-                <div class="row">
+                <div class="col">
                     <div class="col">
                         <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
                     </div>
@@ -82,13 +83,15 @@
                         Masculino
                     </label>
                 </div>
+                
                 <!--Email del usuario-->
                 <div class="mb-3">
                     <label for="" class="form-label">Email</label>
                     <input type="email" placeholder="Correo electronico"class="form-control" id="" aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
-                    
+                
+                    <!--Edad del usuario-->    
                 </div>
                     <select id="inputState" class="form-select">
                         <option disable selected>Edad</option>
@@ -113,7 +116,7 @@
     
     <!--Inicio del footer-->
     <footer class="piecito py-3 my-4">
-        <div class="pieBtm">
+        <div class="pieBtm badge rounded-pill">
             <a href="#cabecita">Volver Arriba</a>
         </div>
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">

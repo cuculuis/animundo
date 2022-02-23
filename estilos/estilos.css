@@ -194,8 +194,7 @@ div div span {
 
 /*Imagenes de anime*/
 .imgInd {
-    width: 50%;
-    justify-content: center;
+    justify-items: center;
 }
 /*Fin del contenido index*/
 
