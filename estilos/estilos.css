@@ -178,7 +178,20 @@ section div p {
 
 .animeNew1, .animeNew2, .animeNew3 {
     margin: 1rem;
-    text-align: center;
+    text-align: center;    
+    transform: scale(1);
+}
+
+.animeNew1:hover {
+    transform: scale(1.1);
+}
+
+.animeNew2:hover {
+    transform: scale(1.1);
+}
+
+.animeNew3:hover {
+    transform: scale(1.1);
 }
 
 .titAnimenew {
@@ -482,11 +495,6 @@ section div p {
 
 .animeNew1, .animeNew2, .animeNew3 {
     margin: 1rem;
-    transform: scale(1);
-}
-
-.animeNew1:hover {
-    transform: rotate(90deg) scale(2) translateY(-50%) translateX(50%);
 }
 
 .titAnimenew {
