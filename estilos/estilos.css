@@ -238,6 +238,17 @@ div div span {
     border-bottom: #FFDBDF 1px solid;
 }
 
+.ultNot:hover{
+    animation: morph 3s infinite;
+}
+
+@keyframes morph {
+    0% { background-color: #465DC2; }
+    33% { background-color: #142fa8; }
+    66% { background-color: #0632f7; }
+    100% { background-color: #0c1852; }
+}
+
 .ultNot h1 {
     font-size: 3rem;
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -265,6 +276,18 @@ div div span {
     align-items: center;
 }
 
+.notDest:hover{
+    animation: morph 5s infinite;
+}
+
+@keyframes morph {
+    0% { background-color: #465DC2; }
+    33% { background-color: #142fa8; }
+    66% { background-color: #0632f7; }
+    100% { background-color: #0c1852; }
+}
+
+
 .notDest h3 {
     grid-column: 1 / 2 span;
     grid-row: 1fr
@@ -281,6 +304,11 @@ div div span {
     padding: 5rem;
     font-size: 2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.formtext:focus {
+    transform: scale(1.2);
+    
 }
 /*Fin del contenido de contacto*/
 
@@ -454,6 +482,11 @@ section div p {
 
 .animeNew1, .animeNew2, .animeNew3 {
     margin: 1rem;
+    transform: scale(1);
+}
+
+.animeNew1:hover {
+    transform: rotate(90deg) scale(2) translateY(-50%) translateX(50%);
 }
 
 .titAnimenew {
