@@ -1,0 +1,36 @@
+//Variables//
+@import "./variables";
+
+//Header y el nav//
+.cbz__nav {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    background: linear-gradient(-90deg, rgba(0,0,0,1) 46%, rgba(15,19,142,1) 81%, rgba(0,212,255,1) 100%);
+    &__logo img {
+        width: 50%;
+    }
+    &__shr-list {
+        display: grid;
+        justify-content: end;
+        align-content: normal;
+        &_list {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            align-items: center;
+        }
+    }
+}
+
+header nav div ul li a {
+    padding: 1rem;
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    color: $color-importante;
+    &:hover {
+        background-color: #E173EB;
+        color: #000;
+        }
+}

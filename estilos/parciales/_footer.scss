@@ -1,0 +1,30 @@
+//Variables//
+@import "./variables";
+
+//Inicio del footer//
+.piecito {
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #000;
+    //Boton volver arriba//
+    
+    .pieBtm{
+        padding: 1.5rem;
+        background-color: #AB51FF;
+        display: inline-block;
+    }
+}
+
+footer div p {
+    font-size: $font-size-links-foot;
+    color: #FFDBDF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer ul {
+    font-size: $font-size-links-foot;
+    color: #FFDBDF;
+}
+
+//Fin del footer//

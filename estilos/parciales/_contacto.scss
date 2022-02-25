@@ -1,0 +1,14 @@
+
+.fomCon {
+    display: flex;
+    flex-direction: row;
+    background-color: #AB51FF;
+    padding: 5rem;
+    font-size: $font-size-content;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    .formtext:focus {
+        transform: scale(1.2);
+        
+    }
+}
