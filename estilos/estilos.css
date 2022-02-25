@@ -1,0 +1,787 @@
+/*Cambios generales y resets*/
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #000000;
+}
+
+header, footer, select {
+    display: block;
+}
+
+/*Header y el nav*/
+.cbz__nav {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    background: linear-gradient(-90deg, rgba(0,0,0,1) 46%, rgba(15,19,142,1) 81%, rgba(0,212,255,1) 100%);
+}
+
+.cbz__nav__logo img {
+    width: 25%;
+}
+
+.cbz__shr-list {
+    display: grid;
+    justify-content: end;
+    align-content: normal;
+}
+
+.cbz__shr-list_list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+}
+
+header nav div ul li a {
+    padding: 1rem;
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    color: #9CE3FF;
+}
+
+header nav div ul li a:hover {
+    background-color: #E173EB;
+    color: #000;
+    }
+
+/*Fin del header y nav*/
+
+/*Inicio del footer*/
+.piecito {
+    display: grid;
+    grid-template-areas: "buttom" "lista" "Derauth Dereauth" "redes";
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #000;
+}
+
+footer div p {
+    font-size: 1.3rem;
+    color: #FFDBDF;
+    font-family: 'Montserrat', sans-serif;
+    display:inline-block;
+    margin-left: 25%;
+    text-align: center;
+}
+
+footer div ul li {
+    display: inline-block;
+    padding: 1em;
+    list-style-type: none;
+    color: #FFDBDF;
+}
+
+/*Boton volver arriba*/
+.pieBtm{
+    padding: 1.5rem;
+    background-color: #AB51FF;
+    display: inline-block;
+}
+/*Fin del footer*/
+
+/*Cambios especificos*/
+/*Inicio del contenido index*/
+/*HeroSection*/
+.HeroSec{
+    background-color: #000000;
+    background-image: url(../multimedia/blue-lock-hsc.png);
+    background-position: right; 
+    background-repeat: no-repeat;
+    border: 1em;
+    padding: 6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+/*Titulo y contenido del HeroSec*/
+.TitHero {
+    font-size: 10rem;
+    font-family: 'Dongle', sans-serif;
+    color: #9CE3FF;
+}
+
+section div p {
+    color: #FFDBDF;
+    font-size: 4em;
+    font-family: 'Dongle', sans-serif;
+}
+
+/*Boton del HeroSec*/
+.hsButtom {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    background-color: #AB51FF;
+    margin-top: 2em;
+    padding: 1.3em;
+    font-size: 1.8em;
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.hsButtom:hover {
+    color: #ffffff;
+    background-color: #465DC2;
+    opacity: 1;
+}
+
+/*Sección de noticias y anime*/
+.secAniNew {
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/*Sección noticias*/
+.newsAni {
+    width: 50%;
+    padding: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    overflow-y: hidden;
+}
+
+.newsButtom {
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    color: #000000;
+    background-color: #AB51FF;
+}
+
+
+/*Ultimos animes*/
+.aniNew {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    width: 50%;
+    padding-top: 5rem;
+    padding-left: 5rem;
+    padding-bottom: 5rem;
+    border-right: 1px solid #fff;
+}
+
+.subTitle {
+    grid-area: 1 / 4 span;
+    font-size: 2rem;
+    color: #E173EB;
+    font-family: 'Roboto', sans-serif;
+}
+
+.animeNew1, .animeNew2, .animeNew3 {
+    margin: 1rem;
+    text-align: center;
+}
+
+.titAnimenew {
+    color: #E173EB;
+    font-family:'Roboto', sans-serif;
+}
+
+div div span {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #465DC2;
+}
+
+/*Imagenes de anime*/
+.imgInd {
+    width: 50%;
+}
+/*Fin del contenido index*/
+
+/*Contenido Anime*/
+.vidAni {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.aniTitle {
+    grid-area: 1 / 3 span;
+    grid-template-columns: 3vw;
+    font-size: 2.5rem;
+    color: #E173EB;
+}
+
+.anime1, .anime2, .anime3, .anime4, .anime5, .anime6 {
+    text-align: center;
+}
+
+
+/*Contenido de Estrenos*/
+.estrenos {
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.estrenos ul li:hover {
+    background-color: rgb(139, 6, 6);
+}
+/*Fin del contenido estrenos*/
+
+
+/*Contenido de noticia*/
+/*Sección ultimas noticias*/
+.ultNot {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #465DC2;
+    color: #E173EB;
+    padding: 2rem;
+    width: 100%;
+    border-bottom: #FFDBDF 1px solid;
+}
+
+.ultNot h1 {
+    font-size: 3rem;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    grid-column: 1 / 2 span;
+}
+
+.ultNot p {
+    font-size: 1.6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.vidNot {
+    width: 100%;
+}
+
+/*Noticia destacada*/
+.notDest {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgb(38, 75, 124);
+    padding: 5rem;
+    width: 100%;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.notDest h3 {
+    grid-column: 1 / 2 span;
+    grid-row: 1fr
+}
+/*Fin de contenido de Noticias*/
+
+
+/*Contenido Contacto*/
+/*Formulario*/
+.fomCon {
+    display: flex;
+    flex-direction: row;
+    background-color: #AB51FF;
+    padding: 5rem;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*Fin del contenido de contacto*/
+
+/*Contenido de Politica de Privacidad*/
+.reglasdelaPag {
+    color: #fff;
+    text-align: justify;
+}
+
+/****MEDIA QUERYS****/
+/*Para el movil*/
+@media only screen and (max-width:425px) {
+ /*Header y el nav*/
+.cbz__nav {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-between;
+    background: linear-gradient(360deg, rgba(0,0,0,1) 46%, rgba(15,19,142,1) 81%, rgba(0,212,255,1) 100%);
+}
+
+.cbz__nav__logo img {
+    width: 100%;
+    height: 100px;
+}
+
+.cbz__shr-list {
+    justify-content: center;
+    align-content: normal;
+}
+
+.cbz__shr-list_list{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    color: #9CE3FF;
+}
+
+.cbz__shr-list_list li {
+    margin: 1rem;
+}
+
+.cbz__shr-list_list li a {
+    font-size: 1.4rem;
+}
+
+.cbz__shr-list_list li a:hover {
+    background-color: #E173EB;
+    color: #000;
+    }
+/*Fin del header y nav*/
+
+/*Inicio del footer*/
+.piecito {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #000;
+}
+
+.DerechosAu {
+    grid-row: 2 / 2 span;
+    font-size: 1.2rem;
+    color: #FFDBDF;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    text-align: center;
+}
+
+footer div ul li {
+    padding: 1.2rem;
+    list-style-type: none;
+    color: #FFDBDF;
+}
+
+/*Boton volver arriba*/
+.pieBtm{
+    padding: 1.5rem;
+    background-color: #AB51FF;
+    display: inline-block;
+}
+/*Fin del footer*/  
+
+/*Inicio del contenido index*/
+/*HeroSection*/
+.HeroSec{
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+/*Titulo y contenido del HeroSec*/
+.TitHero {
+    font-size: 3rem;
+    color: #9CE3FF;
+}
+
+section div p {
+    color: #FFDBDF;
+    font-size: 1.6rem;
+    justify-items: left;
+}
+
+/*Boton del HeroSec*/
+.hsButtom {
+    margin-top: 1.5rem;
+    padding: 1.2em;
+    font-size: 1.2em;
+    color: #FFDBDF;
+}
+
+
+/*Sección de noticias y anime*/
+.secAniNew {
+    display: flex;
+    flex-direction:column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/*Sección noticias*/
+.newsAni {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+}
+
+.newsButtom {
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: #000;
+    color: #9CE3FF;
+}
+
+
+/*Ultimos animes*/
+.aniNew {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    width: 100%;
+    padding: 5rem;
+    border-bottom: 1px solid #fff;
+}
+
+.subTitle {
+    grid-area: 1 / 4 span;
+    justify-content: center;
+    font-size: 2rem;
+    color: #E173EB;
+    font-family: 'Roboto', sans-serif;
+}
+
+.animeNew1, .animeNew2, .animeNew3 {
+    margin: 1rem;
+}
+
+.titAnimenew {
+    color: #E173EB;
+    font-family:'Roboto', sans-serif;
+}
+
+div div span {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: #465DC2;
+}
+
+/*Imagenes de anime*/
+.imgInd {
+    width: 100%;
+}
+/*Fin del contenido index*/
+
+/*Contenido Anime*/
+.vidAni {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.aniTitle {
+    grid-area: 1 / 3 span;
+    font-size: 2rem;
+    color: #E173EB;
+}
+
+.anime1, .anime2, .anime3, .anime4, .anime5, .anime6 {
+    text-align: center;
+}
+
+/*Fin del contenido de Anime*/
+
+/*Contenido de noticia*/
+/*Sección ultimas noticias*/
+.ultNot {
+    display: flex;
+    flex-direction: column;
+}
+
+.ultNot h1 {
+    font-size: 2rem;
+}
+
+.ultNot p {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.vidNot {
+    width: 100%;
+}
+
+/*Contenido de Estrenos*/
+.estrenos ul li {
+    color: #FFDBDF;
+}
+
+/*Noticia destacada*/
+.notDest {
+    display: flex;
+    flex-direction: column;
+    background-color: #465DC2;
+    padding: 5rem;
+    width: 100%;
+}
+
+.notDest h3 {
+    grid-column: 1 / 2 span;
+    grid-row: 1fr
+}
+/*Fin de contenido de Noticias*/
+
+/*Contenido Contacto*/
+/*Formulario*/
+.fomCon {
+    background-color: #AB51FF;
+    font-size: 1.6rem;
+}
+/*Fin del contenido de contacto*/
+}
+
+/*Para la tablet*/
+@media only screen and (max-width:768px) {
+    /*Header y el nav*/
+    .cbz__nav{
+        background: linear-gradient(-90deg, rgba(0,0,0,1) 50%, rgba(33,34,96,1) 72%, rgba(55,59,171,1) 88%, rgba(73,187,210,1) 100%);
+    }
+
+    .cbz__shr-list {
+        justify-content: center;
+        align-content: normal;
+    }
+    
+    .cbz__shr-list_list{
+        padding: 1rem;
+        font-size: 1.2rem;
+        font-family: 'Roboto', sans-serif;
+        color: #9CE3FF;
+    }
+    
+    .cbz__shr-list_list li {
+        margin: 1rem;
+    }
+    
+    .cbz__shr-list_list li a {
+        font-size: 1.4rem;
+    }
+    
+    .cbz__shr-list_list li a:hover {
+        background-color: #E173EB;
+        color: #000;
+        }
+    /*Fin del header y nav*/
+    
+    /*Inicio del footer*/
+    .piecito {
+        width: 100%;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        background-color: #000;
+    }
+    
+    .DerechosAu {
+        font-size: 1.2rem;
+        justify-content: left;
+        text-align: justify;
+    }
+    
+    footer div ul li {
+        padding: 1.2rem;
+        list-style-type: none;
+        color: #FFDBDF;
+    }
+    
+    /*Boton volver arriba*/
+    .pieBtm{
+        padding: 1.5rem;
+        background-color: #AB51FF;
+        display: inline-block;
+    }
+    /*Fin del footer*/  
+    
+    /*Inicio del contenido index*/
+    /*HeroSection*/
+    .HeroSec{
+        background-position: center;
+        background-size: cover; 
+        background-repeat: no-repeat;
+        padding-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: flex-start;
+    }
+    
+    /*Titulo y contenido del HeroSec*/
+    .TitHero {
+        font-size: 4rem;
+        color: #9CE3FF;
+    }
+    
+    section div p {
+        color: #FFDBDF;
+        font-size: 2rem;
+        justify-items: left;
+    }
+    
+    /*Boton del HeroSec*/
+    .hsButtom {
+        margin-top: 1.5rem;
+        padding: 1.2em;
+        font-size: 1.2em;
+        color: #FFDBDF;
+    }
+    
+    
+    /*Sección de noticias y anime*/
+    .secAniNew {
+        display: flex;
+        flex-direction:column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    /*Sección noticias*/
+    .newsAni {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 2rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 3rem;
+    }
+    
+    .newsButtom {
+        display: inline-block;
+        padding: 1rem;
+        font-size: 1.2rem;
+        background-color: #000;
+        color: #9CE3FF;
+    }
+    
+    
+    /*Ultimos animes*/
+    .aniNew {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        width: 100%;
+        padding: 5rem;
+        border-bottom: 1px solid #fff;
+    }
+    
+    .subTitle {
+        grid-area: 1 / 4 span;
+        justify-content: center;
+        font-size: 2rem;
+        color: #E173EB;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .animeNew1, .animeNew2, .animeNew3 {
+        margin: 1rem;
+    }
+    
+    .titAnimenew {
+        color: #E173EB;
+        font-family:'Roboto', sans-serif;
+    }
+    
+    div div span {
+        display: inline-block;
+        font-size: 1.2rem;
+        color: #465DC2;
+    }
+    
+    /*Imagenes de anime*/
+    .imgInd {
+        width: 100%;
+    }
+    /*Fin del contenido index*/
+    
+    /*Contenido Anime*/
+    .vidAni {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .titAnimenew {
+        font-size: rem;
+    }
+
+    .aniTitle {
+        grid-area: 1 / 3 span;
+        font-size: 2rem;
+        color: #E173EB;
+    }
+    
+    .anime1, .anime2, .anime3, .anime4, .anime5, .anime6 {
+        text-align: center;
+    }
+    
+    /*Fin del contenido de Anime*/
+    
+    /*Contenido de noticia*/
+    /*Sección ultimas noticias*/
+    .ultNot {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .ultNot h1 {
+        font-size: 2rem;
+    }
+    
+    .ultNot p {
+        font-size: 1.5rem;
+        color: #000;
+    }
+    
+    .vidNot {
+        width: 100%;
+    }
+    
+    /*Noticia destacada*/
+    .notDest {
+        display: flex;
+        flex-direction: column;
+        background-color: #465DC2;
+        padding: 5rem;
+        width: 100%;
+    }
+    
+    .notDest h3 {
+        grid-column: 1 / 2 span;
+        grid-row: 1fr
+    }
+    /*Fin de contenido de Noticias*/
+    
+    /*Contenido Contacto*/
+    /*Formulario*/
+    .fomCon {
+        background-color: #AB51FF;
+        font-size: 2rem;
+    }
+    /*Fin del contenido de contacto*/
+    }
+    
