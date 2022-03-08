@@ -68,3 +68,12 @@ footer ul {
   font-family: Verdana, Geneva, Tahoma, sans-serif; }
   .fomCon .formtext:focus {
     transform: scale(1.2); }
+
+.carounoticias {
+  background-color: #000;
+  overflow: hidden;
+  font-size: 1.6rem; }
+
+.img__carousel {
+  height: 50rem;
+  object-fit: cover; }

@@ -1,0 +1,16 @@
+//Variables//
+@import "./variables";
+
+//Carousel de noticias//
+.carounoticias {
+    background-color: #000;
+    overflow: hidden;
+    font-size: $font-size-content;
+
+}
+
+.img__carousel {
+    height: 50rem;
+    object-fit: cover;
+}
+

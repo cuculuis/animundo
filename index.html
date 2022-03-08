@@ -17,13 +17,13 @@
     <meta name="keywords" content="Anime, Temporada, Noticias, Estrenos, Online, HD, Bleach, OP">
 
     <!--Mi estilo css-->
-    <link rel="stylesheet" href="./estilos/estilos.css">
+    <link rel="stylesheet" href="./estilos/compilado.css">
     <title>Animundo - Inicio</title>
 </head>
 <body>
     <!--Navegación y logo-->
-    <header id="cabecita" class=""> 
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <header id="cabecita" class="container-fluid"> 
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark cbz__nav">
             <div class="container-fluid">
                 <div class="cbz__nav__logo">
                     <a class="navbar-brand" href="#"><img src="./multimedia/logo.png" alt="Logo"></a>
@@ -52,7 +52,7 @@
                 </div>
                 <div class="container-fluid">
                     <div class="row justify-content-start">
-                        <div class="col-md-4">
+                        <div class="col">
                             <form class="d-flex">
                                 <input class="form-control me-2" type="search" placeholder="Buscador de animes" aria-label="Buscador de animes">
                                 <button class="btn btn-outline-success" type="submit">Buscar</button>
@@ -65,6 +65,78 @@
     </header>
     <!--Inicio del contenido-->
     <main>
+        <!--Carrousel de noticias-->
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 p-0">
+                    <div id="myCarousel" class="carounoticias carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+                          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
+                        </div>
+            
+                        <!--Carrucel Inner-->
+                        <div class="carousel-inner">
+                            
+                            <!--Item 1 carrusel imagen de fondo-->
+                            <div class="carousel-item active">        
+                                <img src="./multimedia/herosec.jpg" alt="Blue Lock" class="carounoticias__bluelock d-block w-100 img__carousel">
+                            
+                                <!--Item 1 carrusel contenido-->
+                                <div class="container-fluid">
+                                    <div class="carousel-caption text-start">
+                                        <h1>¿Boji podrá demostrar que es digno al trono?</h1>
+                                        <p>Boji, sordo, débil e incapaz de comunicarse, no es el típico heredero al trono. Como primogénito tiene un gran deseo de ser un Rey </p>
+                                        <p><a class="btn btn-lg btn-primary" href="./paginas/anime.html">Ver Ahora</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!--Item 2 carrusel imagen de fondo-->
+                            <div class="carousel-item">
+                                <img src="./multimedia/herosec.jpg" alt="Blue Lock" class="carounoticias__bluelock d-block w-100 img__carousel">
+                                
+                                <!--Item 2 carrusel contenido-->
+                                <div class="container-fluid">
+                                    <div class="carousel-caption text-start">
+                                        <h1>A pocos días del estreno del anime Blue Lock</h1>
+                                        <p>¿El ego de los personajes podrá conquistar el corazón de los espectadores?</p>
+                                        <p><a class="btn btn-lg btn-primary" href="./paginas/noticias.html">Leer más</a></p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!--Item 3 imagen de fondo-->
+                            <div class="carousel-item">
+                                <img src="./multimedia/blue-lock-hsc.png" alt="Boku no Hero Academia" class="carounoticias__bokunoheroacademia d-block w-100 img__carousel">
+                                
+                                <!--Item 3 carrusel contenido-->
+                                <div class="container-fluid">
+                                    <div class="carousel-caption text-start">
+                                        <h1>Posible fecha de la 6ta temporada de BNHA</h1>
+                                        <p>Esta temporada se anunció poco después de que el episodio final de la 5ta temporada se emitiera en Japón.</p>
+                                        <p><a class="btn btn-lg btn-primary" href="./paginas/noticias.html">Leer más</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Controles del carrusel-->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <!--Fin del Carrusel-->
+
+        <!--Inicio -->
         <section class="HeroSec">
             <div>
                 <h2 class="TitHero animate__animated animate__bounceIn">Lorem ipsum dolor sit amet.</h2>
