@@ -76,4 +76,11 @@ footer ul {
 
 .img__carousel {
   height: 50rem;
-  object-fit: cover; }
+  object-fit: cover;
+  /*Media query del carousel*/ }
+  @media only screen and (max-width: 768px) {
+    .img__carousel {
+      height: 70vh; } }
+  @media only screen and (max-width: 425px) {
+    .img__carousel {
+      height: 60vh; } }

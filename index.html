@@ -22,8 +22,8 @@
 </head>
 <body>
     <!--Navegación y logo-->
-    <header id="cabecita" class="container-fluid"> 
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark cbz__nav">
+    <header id="cabecita" class="container-fluid p-0"> 
+        <nav class="container-fluid navbar navbar-expand-md navbar-dark bg-dark cbz__nav">
             <div class="container-fluid">
                 <div class="cbz__nav__logo">
                     <a class="navbar-brand" href="#"><img src="./multimedia/logo.png" alt="Logo"></a>
@@ -65,7 +65,7 @@
     </header>
     <!--Inicio del contenido-->
     <main>
-        <!--Carrousel de noticias-->
+        <!--Carrousel de cosas a resaltar de la pagina (Noticias y animes)-->
         <section class="container-fluid">
             <div class="row">
                 <div class="col-md-12 p-0">
@@ -136,54 +136,88 @@
         </section>
             <!--Fin del Carrusel-->
 
-        <!--Inicio -->
-        <section class="HeroSec">
-            <div>
-                <h2 class="TitHero animate__animated animate__bounceIn">Lorem ipsum dolor sit amet.</h2>
-                <p class="animate__animated animate__bounceIn">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti error excepturi itaque consequatur quam possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, qui?
-                </p>
-            </div>
-            <div class="animate__animated animate__bounceIn">
-                <a href="./paginas/noticias.html" class="hsButtom badge rounded-pill">Enterate de más</a>
-            </div>
-        </section>
-
-        <!--Sec de Anime y Ep nuevos-->
-        <section class="secAniNew">
-            <div class="newsAni">
-                <h3 class="subTitle">Últimas noticias</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure natus tenetur et repudiandae cumque itaque, dolores animi optio molestias eveniet voluptatem. Vel perspiciatis harum impedit nihil ip
-                </p>
-                <a href="./paginas/noticias.html" class="newsButtom badge rounded-pill">Ver más</a>
-            </div>
-
-            <div class="aniNew">
-                <h3 class="subTitle">Últimos capítulos</h3>
-                <a href="./paginas/anime.html" class="linkanimenew">
-                    <div class="animeNew1">
+        <!--Sección de noticias de ultimo momento y Episodios nuevos-->
+        <section class="">
+            
+            <!--Noticias de último momento-->
+            <div class="notianime container-fluid">
+                    <h2 class="subTitle">Últimas noticias</h2>
+                    
+                    <!--Noticia 1-->
+                        <div class="row">
+                            <div class="notianime__n1 col-md-6 col-sm-6 col-6">
+                                <h3>¡Se aproxíma el estreno de Dragon Ball Super: Super Hero!</h3>
+                                <p>La secuela de la película Dragon ball Super: Broly se estrenará en mes de abril.</p>
+                                <a href="./paginas/noticias.html" class="newsButtom badge rounded-pill">Ver más</a>
+                            </div>
+                            <img src="./multimedia/onepiece.jpg" alt="Película de Dragon Ball Super: Super Hero" class="notianime__n1_img col-md-6 col-sm-6 col-6">
+                        </div>
                         
-                        <h4 class="titAnimenew">Shingeki no kyojin</h4>
-                        <img src="./multimedia/shigekinokyojin.jpg" alt="Shingeki no kyojin" class="imgInd">
-                        <span>Lorem ipsum dolor sit amet.</span>
-                    </div>
-                </a>
-                <a href="./paginas/anime.html" class="linkanimenew">
-                    <div class="animeNew2">
-                    <h4 class="titAnimenew">Kimetsu no Yaiba</h4>
-                    <img src="./multimedia/kimetsunoyaiba.jpg" alt="Kimetsu no Yaiba" class="imgInd">
-                    <span>Lorem ipsum dolor sit amet.</span>
-                    </div>
-                </a>
-                <a href="./paginas/anime.html" class="linkanimenew">
-                    <div class="animeNew3">
-                    <h4 class="titAnimenew">Slam Dunk</h4>
-                    <img src="./multimedia/slamdunk.jpg" alt="Slam Dunk" class="imgInd">
-                    <span>Lorem ipsum dolor sit amet.</span>
-                    </div>
-                </a>
+                        <!--Noticia 2-->
+                        <div class="row mt-5">
+                            <img src="./multimedia/onepiece.jpg" alt="Película de Dragon Ball Super: Super Hero" class="notianime__n1_img col-md-6 col-sm-6 col-6">
+                            <div class="notianime__n2 col-md-6 col-sm-6 col-6">
+                                <h3>¡A menos de un mes de la segunda temporada de Tate no Yuusha no Nariagari!</h3>
+                                <p>Se estima que las aventuras de nuestro heroe con escudo Naofumi comenzará su transmisión en la temporada de primavera.</p>
+                                <a href="./paginas/noticias.html" class="newsButtom badge rounded-pill">Ver más</a>
+                            </div>    
+                        </div>
+
+                        <!--Noticia 3-->
+                        <div class="row mt-5">
+                            <div class="notianime__n1 col-md-6 col-sm-6 col-6">
+                                <h3>La nueva película Detective Conan Movie 25: Halloween no Hanayome está más cerca de lo que crees</h3>
+                                <p>La película se piensa lanzar durante la Golden Week de este año.</p>
+                                <a href="./paginas/noticias.html" class="newsButtom badge rounded-pill">Ver más</a>
+                            </div>
+                            <img src="./multimedia/onepiece.jpg" alt="Película de Dragon Ball Super: Super Hero" class="notianime__n1_img col-md-6 col-sm-6 col-6">
+                        </div>
             </div>
+
+            <!--Últimos episodios publicados-->
+            <div class="nvanimeep container-fluid mt-5 text-center">
+                <h2 class="subTitle">Últimos capítulos</h2>
+                <div class="row">
+                    <!--Anime 1-->
+                    <div class="nvanimeep__n1 col-md-6 col-6">    
+                            <a href="./paginas/anime.html" class="nvanimeep__link1">
+                                <h3 class="titAnimenew">Shingeki no kyojin</h3>
+                                <img src="./multimedia/shigekinokyojin.jpg" alt="Shingeki no kyojin" class="imgInd col-md-4 col-6">
+                                <p>Episodio 84</p>
+                            </a>
+                        </div>    
+                    <!--Anime 2-->    
+                    <div class="animeNew2 col-md-6 col-6">
+                        <a href="./paginas/anime.html" class="linkanimenew">
+                            <h3 class="titAnimenew">Kimetsu no Yaiba</h3>
+                            <img src="./multimedia/kimetsunoyaiba.jpg" alt="Kimetsu no Yaiba" class="imgInd col-md-6 col-6">
+                            <p>Episodio 23</p>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <!--Anime 3-->
+                    <div class="animeNew3 col-md-6 col-6">
+                        <a href="./paginas/anime.html" class="linkanimenew">
+                            <h3 class="titAnimenew">Slam Dunk</h3>
+                            <img src="./multimedia/slamdunk.jpg" alt="Slam Dunk" class="imgInd col-md-6  col-6">
+                            <p>Episodio 45</p>
+                        </a>
+                    </div>
+                    
+                    <!--Anime 4-->
+                    <div class="animeNew3 col-md-6 col-6">
+                        <a href="./paginas/anime.html" class="linkanimenew">
+                            <h3 class="titAnimenew">Slam Dunk</h3>
+                            <img src="./multimedia/slamdunk.jpg" alt="Slam Dunk" class="imgInd col-md-6 col-6">
+                            <p>Episodio 45</p>
+                        </a>
+                    </div>
+                </div>
+                <p><a class="btn btn-lg btn-primary" href="./paginas/anime.html">Más Animes</a></p>
+            </div>
+            <!--Fin de noticias-->
         </section>
     </main>
         
