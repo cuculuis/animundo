@@ -1,0 +1,29 @@
+@import "./variables";
+
+.boton {
+    text-decoration: none;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    color: map-get($colors, "black");
+    background-color: map-get($colors , "segundo");
+    font-weight: 700;
+    border-color: map-get($colors, "segundo" );
+
+    &:hover{
+        color: map-get($colors, "white");
+        background-color: map-get($colors, "primero")
+    }
+
+}
+
+
+.boton--anime{
+    @extend .boton;
+    background-color: map-get($colors, "quinto");
+    font-weight: 600;
+    }
+
+.boton--noticia {
+    @extend .boton;
+    font-weight: 600;
+}

@@ -1,8 +1,8 @@
+@import "./variables";
+
+
 * {
-    margin: 0px;
-    border: 0px;
-    padding: 0px;
-    box-sizing: border-box; 
+    @include todocero;
 }
 
 html {
@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background-color: #000000;
+    background-color: map-get($colors,"black");
 }
 
 header, footer, select {

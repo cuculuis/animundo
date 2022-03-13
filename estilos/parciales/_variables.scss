@@ -1,11 +1,32 @@
-//color en links//
-$color-importante: #9CE3FF;
+//paleta de colores//
+$colors: (
+    "primero": #AB51FF,
+    "segundo": #E173EB,
+    "tercero": #FFDBDF,
+    "cuarto": #9CE3FF,
+    "quinto": #465DC2,
+    "black": #000,
+    "white": #fff,
+);
+
+//Tamaño de letra//
+$letras: (
+    "pequeña": 1.3rem,
+    "mediana": 2rem,
+    "grande": 3rem,
+    "extragrande": 5rem,
+);
+
+//Reset cero//
+@mixin todocero {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    box-sizing: border-box
+}
 
 //tamaño de letra en footer//
 $font-size-links-foot: 1.3rem;
-
-//color en footer//
-$color-footer: #FFDBDF;
 
 //tamaño en cosas normales de contenido//
 $font-size-content: 1.6rem;

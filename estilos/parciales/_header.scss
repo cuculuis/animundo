@@ -28,9 +28,8 @@ header nav div ul li a {
     padding: 1rem;
     font-size: 3rem;
     font-family: 'Roboto', sans-serif;
-    color: $color-importante;
     &:hover {
-        background-color: #E173EB;
-        color: #000;
+        background-color: map-get($colors,"segundo");
+        color: map-get($colors,"black");
         }
 }
