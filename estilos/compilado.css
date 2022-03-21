@@ -40,11 +40,68 @@ header nav div ul li a {
     background-color: #E173EB;
     color: #000; }
 
+/****MEDIA QUERYS****/
+/*Para el movil*/
+@media only screen and (max-width: 425px) {
+  /*Header y el nav*/
+  .cbz__nav {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-between;
+    background: linear-gradient(360deg, black 46%, #0f138e 81%, #00d4ff 100%); }
+  .cbz__nav__logo img {
+    width: 100%;
+    height: 100px; }
+  .cbz__shr-list {
+    justify-content: center;
+    align-content: normal; }
+  .cbz__shr-list_list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    color: #9CE3FF; }
+  .cbz__shr-list_list li {
+    margin: 1rem; }
+  .cbz__shr-list_list li a {
+    font-size: 1.4rem; }
+  .cbz__shr-list_list li a:hover {
+    background-color: #E173EB;
+    color: #000; } }
+
+/*Fin del header y nav*/
+/*Para la tablet*/
+@media only screen and (max-width: 768px) {
+  /*Header y el nav*/
+  .cbz__nav {
+    background: linear-gradient(-90deg, black 50%, #212260 72%, #373bab 88%, #49bbd2 100%); }
+  .cbz__shr-list {
+    justify-content: center;
+    align-content: normal; }
+  .cbz__shr-list_list {
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    color: #9CE3FF; }
+  .cbz__shr-list_list li {
+    margin: 1rem; }
+  .cbz__shr-list_list li a {
+    font-size: 1.4rem; }
+  .cbz__shr-list_list li a:hover {
+    background-color: #E173EB;
+    color: #000; } }
+
 .piecito {
   width: 100%;
   padding-top: 2rem;
   padding-bottom: 2rem;
   background-color: #000; }
+  .piecito .pieBtm {
+    text-decoration: none; }
 
 footer {
   font-size: 1.3rem;
@@ -55,6 +112,40 @@ footer ul {
   font-size: 1.3rem;
   color: #FFDBDF; }
 
+/****MEDIA QUERYS****/
+/*Para el movil*/
+/*Inicio del footer*/
+@media only screen and (max-width: 425px) {
+  .pieBtm {
+    padding: 1.5rem;
+    background-color: #AB51FF;
+    display: inline-block; } }
+
+/*Fin del footer*/
+/*Para la tablet*/
+/*Inicio del footer*/
+@media only screen and (max-width: 768px) {
+  .piecito {
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #000; }
+  .DerechosAu {
+    font-size: 1.2rem;
+    justify-content: left;
+    text-align: justify; }
+  footer div ul li {
+    padding: 1.2rem;
+    list-style-type: none;
+    color: #FFDBDF; }
+  /*Boton volver arriba*/
+  .pieBtm {
+    padding: 1.5rem;
+    background-color: #AB51FF;
+    display: inline-block;
+    text-decoration: none; } }
+
+/*Fin del footer*/
 .carounoticias {
   background-color: #000;
   overflow: hidden;

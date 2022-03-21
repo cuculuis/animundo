@@ -12,6 +12,7 @@
     
     .pieBtm{
         @extend .boton;
+        text-decoration: none;
     }
 }
 
@@ -27,3 +28,47 @@ footer ul {
 }
 
 //Fin del footer//
+/****MEDIA QUERYS****/
+/*Para el movil*/
+/*Inicio del footer*/
+@media only screen and (max-width:425px) {
+.pieBtm{
+    padding: 1.5rem;
+    background-color: #AB51FF;
+    display: inline-block;
+    }
+}
+/*Fin del footer*/  
+
+/*Para la tablet*/
+/*Inicio del footer*/
+@media only screen and (max-width:768px) {
+.piecito {
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #000;
+}
+
+.DerechosAu {
+    font-size: 1.2rem;
+    justify-content: left;
+    text-align: justify;
+}
+
+footer div ul li {
+    padding: 1.2rem;
+    list-style-type: none;
+    color: #FFDBDF;
+}
+
+/*Boton volver arriba*/
+.pieBtm{
+    padding: 1.5rem;
+    background-color: #AB51FF;
+    display: inline-block;
+    text-decoration: none;
+    }
+}
+/*Fin del footer*/  
+
