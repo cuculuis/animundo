@@ -168,6 +168,18 @@ footer ul {
   padding: 5rem;
   width: 100%;
   font-size: 2rem; }
+  .notianime__n1 {
+    width: 33,33%; }
+    .notianime__n1__img {
+      width: 100%; }
+  .notianime__n2 {
+    width: 33,33%; }
+    .notianime__n2__img {
+      width: 100%; }
+  .notianime__n3 {
+    width: 33,33%; }
+    .notianime__n3__img {
+      width: 100%; }
 
 /*Contenido de noticia*/
 /*Sección ultimas noticias*/

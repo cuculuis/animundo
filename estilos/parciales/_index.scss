@@ -6,7 +6,6 @@
     background-color: #000;
     overflow: hidden;
     font-size: $font-size-content;
-
 }
 
 .img__carousel {
@@ -30,5 +29,29 @@
     width: 100%;
     font-size: 2rem;
 
+    &__n1 {
+        width: 33,33%;
+
+        &__img {
+            width: 100%;
+        }
+    }
+
+    &__n2 {
+        width: 33,33%;
+
+        &__img {
+            width: 100%;
+        }
+    }
+
+    &__n3 {
+        width: 33,33%;
+
+        &__img {
+            width: 100%;
+        }
+    }
 }
+
 
