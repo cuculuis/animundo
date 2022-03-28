@@ -184,8 +184,6 @@ footer ul {
 /*Contenido de noticia*/
 /*Sección ultimas noticias*/
 .ultNot {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   background-color: #465DC2;
   color: #E173EB;
   padding: 2rem;
@@ -214,13 +212,8 @@ footer ul {
   font-size: 1.6rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
-.vidNot {
-  width: 100%; }
-
 /*Noticia destacada*/
 .notDest {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   background-color: #264b7c;
   padding: 5rem;
   width: 100%;
@@ -246,6 +239,28 @@ footer ul {
   grid-row: 1fr; }
 
 /*Fin de contenido de Noticias*/
+/*Media query del carousel*/
+@media only screen and (max-width: 425px) {
+  .ultNot {
+    display: flex;
+    flex-direction: column; }
+  .ultNot h1 {
+    font-size: 2rem; }
+  .ultNot p {
+    font-size: 1.5rem;
+    color: #000; }
+  /*Noticia destacada*/
+  .notDest {
+    display: flex;
+    flex-direction: column;
+    background-color: #465DC2;
+    padding: 5rem;
+    width: 100%; }
+  .notDest h3 {
+    grid-column: 1 / 2 span;
+    grid-row: 1fr; }
+  /*Fin de contenido de Noticias*/ }
+
 .fomCon {
   display: flex;
   flex-direction: row;
