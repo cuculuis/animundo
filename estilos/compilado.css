@@ -382,8 +382,6 @@ p {
   background-color: #E173EB;
   color: #000;
   padding: 5rem; }
-  .fomCon _:focus {
-    transform: scale(1.2); }
   .fomCon h1 {
     font-size: 2.5rem;
     font-weight: 400;
@@ -395,6 +393,8 @@ p {
   .fomCon .formtext {
     font-family: "Poppins";
     font-size: 1.6rem; }
+  .fomCon .formtext:focus {
+    transform: scale(1.05); }
 
 .reglasdelaPag h1 {
   font-family: "M PLUS 1";

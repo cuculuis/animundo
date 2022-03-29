@@ -7,10 +7,6 @@
     background-color: map-get($colors, "segundo");
     color: map-get($colors, "black");
     padding: 5rem;
-    
-    _:focus {
-        transform: scale(1.2);
-    }
 
     h1 {
         @include subtitulos;
@@ -22,6 +18,10 @@
     .formtext {
         font-family: map-get($tipo-letra, "subsubtitulo");
         font-size: map-get($letras, "pequeña");
+        
     }
-    
+    .formtext:focus {
+        transform: scale(1.05);
+    }
 }
+
