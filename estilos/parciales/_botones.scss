@@ -3,7 +3,7 @@
 .boton {
     text-decoration: none;
     padding: 1.5rem;
-    font-size: 1.2rem;
+    font-size: map-get($letras , "pequeña");
     color: map-get($colors, "black");
     background-color: map-get($colors , "segundo");
     font-weight: 700;

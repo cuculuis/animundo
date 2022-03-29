@@ -1,11 +1,29 @@
-//Variables//
-@import "./variables";
-
 //Carousel de noticias//
 .carounoticias {
     background-color: #000;
     overflow: hidden;
-    font-size: $font-size-content;
+    h1 {
+        @include titulos;
+        color: map-get($colors, "black");
+        background-color: map-get($colors, "primero" );
+        opacity: 0.7;
+    
+        @media only screen and (max-width:768px) {
+            @include subtitulos;
+            font-weight: 800;
+        }
+    
+        @media only screen and (max-width: 425px) {
+            
+        }
+    
+    }
+    p {
+        font-size: map-get($letras, "pequeña");
+        color: map-get($colors, "black");
+        background-color: map-get($colors, "segundo" );
+        opacity: 0.8;
+    }
 }
 
 .img__carousel {
@@ -29,6 +47,22 @@
     width: 100%;
     font-size: 2rem;
 
+    .subTitle {
+        @include subtitulos;
+        font-weight: 800;
+        color: map-get($colors , "segundo" );
+    }
+
+    h3 {
+        @include subtitulos;
+        font-weight: 500;
+        color: map-get($colors , "black" );
+    }
+    p {
+        @include contenido;
+        color: map-get($colors, "tercero" );
+    }
+
     &__n1 {
         width: 33,33%;
 
@@ -51,6 +85,15 @@
         &__img {
             width: 100%;
         }
+    }
+}
+
+/*ultimos caps de anime*/
+.nvanimeep {
+    .subTitle {
+        @include subtitulos;
+        font-weight: 800;
+        color: map-get($colors , "segundo" );
     }
 }
 

@@ -19,6 +19,9 @@ header, footer, select {
   flex-direction: row;
   list-style: none;
   justify-content: space-between;
+  font-size: 2.5rem;
+  font-family: "Roboto";
+  font-weight: 600;
   background: linear-gradient(-90deg, black 46%, #0f138e 81%, #00d4ff 100%); }
   .cbz__nav__logo img {
     width: 50%; }
@@ -33,9 +36,7 @@ header, footer, select {
       align-items: center; }
 
 header nav div ul li a {
-  padding: 1rem;
-  font-size: 3rem;
-  font-family: 'Roboto', sans-serif; }
+  padding: 1rem; }
   header nav div ul li a:hover {
     background-color: #E173EB;
     color: #000; }
@@ -99,14 +100,25 @@ header nav div ul li a {
   width: 100%;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  background-color: #000; }
-  .piecito .pieBtm {
-    text-decoration: none; }
-
-footer {
-  font-size: 1.3rem;
+  background-color: #000;
+  font-family: "Roboto";
+  font-size: 1.6rem;
   color: #FFDBDF;
-  font-family: 'Montserrat', sans-serif; }
+  font-weight: 500; }
+  .piecito .DerechosAu {
+    font-family: "Roboto";
+    font-size: 1.6rem;
+    color: #FFDBDF;
+    font-weight: 500; }
+  .piecito ul {
+    font-family: "Roboto";
+    font-size: 1.6rem;
+    color: #FFDBDF;
+    font-weight: 500; }
+  .piecito .pieBtm a {
+    font-weight: 900;
+    text-decoration-line: none;
+    color: #000; }
 
 footer ul {
   font-size: 1.3rem;
@@ -148,8 +160,24 @@ footer ul {
 /*Fin del footer*/
 .carounoticias {
   background-color: #000;
-  overflow: hidden;
-  font-size: 1.6rem; }
+  overflow: hidden; }
+  .carounoticias h1 {
+    font-family: "M PLUS 1";
+    font-size: 4rem;
+    font-weight: 600;
+    color: #000;
+    background-color: #AB51FF;
+    opacity: 0.7; }
+    @media only screen and (max-width: 768px) {
+      .carounoticias h1 {
+        font-size: 2.5rem;
+        font-weight: 400;
+        font-weight: 800; } }
+  .carounoticias p {
+    font-size: 1.6rem;
+    color: #000;
+    background-color: #E173EB;
+    opacity: 0.8; }
 
 .img__carousel {
   height: 50rem;
@@ -168,6 +196,20 @@ footer ul {
   padding: 5rem;
   width: 100%;
   font-size: 2rem; }
+  .notianime .subTitle {
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-weight: 800;
+    color: #E173EB; }
+  .notianime h3 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-weight: 500;
+    color: #000; }
+  .notianime p {
+    font-family: "Poppins";
+    font-size: 2rem;
+    color: #FFDBDF; }
   .notianime__n1 {
     width: 33,33%; }
     .notianime__n1__img {
@@ -181,100 +223,195 @@ footer ul {
     .notianime__n3__img {
       width: 100%; }
 
+/*ultimos caps de anime*/
+.nvanimeep .subTitle {
+  font-size: 2.5rem;
+  font-weight: 400;
+  font-weight: 800;
+  color: #E173EB; }
+
+.anime {
+  background-color: #E173EB; }
+  .anime__aniTitle {
+    font-size: 2.5rem;
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000;
+    font-weight: 800; }
+  .anime__fondo {
+    background-color: #000; }
+  .anime__fondo:hover {
+    color: #000;
+    animation: morph 3s infinite; }
+
+@keyframes morph {
+  0% {
+    background-color: #465DC2; }
+  33% {
+    background-color: #142fa8; }
+  66% {
+    background-color: #0632f7; }
+  100% {
+    background-color: #0c1852; } }
+
+.titAnimenew {
+  font-size: 1.6rem;
+  font-weight: 700; }
+
+p {
+  font-size: 1.4rem; }
+
+.linkanimenew {
+  text-decoration: none;
+  color: #E173EB; }
+
 /*Contenido de noticia*/
 /*Sección ultimas noticias*/
 .ultNot {
-  background-color: #465DC2;
-  color: #E173EB;
+  text-align: justify;
+  background-color: #E173EB;
   padding: 2rem;
   width: 100%;
   border-bottom: #FFDBDF 1px solid; }
+  .ultNot__img {
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+  .ultNot h1 {
+    font-family: "M PLUS 1";
+    font-size: 4rem;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 800;
+    color: #000; }
+  .ultNot h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-weight: 700;
+    color: #000; }
+  .ultNot p {
+    font-family: "Poppins";
+    font-size: 2rem;
+    color: #000; }
+  .ultNot span {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0.7;
+    font-style: italic;
+    color: #000;
+    font-family: "Poppins";
+    font-size: 1.6rem; }
 
 .ultNot:hover {
   animation: morph 3s infinite; }
 
 @keyframes morph {
   0% {
-    background-color: #465DC2; }
+    background-color: #da54f5; }
   33% {
-    background-color: #142fa8; }
+    background-color: #d12cbb; }
   66% {
-    background-color: #0632f7; }
-  100% {
-    background-color: #0c1852; } }
-
-.ultNot h1 {
-  font-size: 3rem;
-  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  grid-column: 1 / 2 span; }
-
-.ultNot p {
-  font-size: 1.6rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+    background-color: #f706d7; } }
 
 /*Noticia destacada*/
 .notDest {
-  background-color: #264b7c;
+  background-color: #FFDBDF;
   padding: 5rem;
   width: 100%;
-  font-size: 2rem;
-  justify-content: center;
-  align-items: center; }
+  text-align: justify; }
+  .notDest h2 {
+    font-family: "M PLUS 1";
+    font-size: 4rem;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 800;
+    color: #000; }
+  .notDest h3 {
+    font-family: "Poppins";
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000; }
+  .notDest p {
+    font-family: "Poppins";
+    font-size: 2rem;
+    color: #000; }
 
 .notDest:hover {
-  animation: morph 5s infinite; }
+  animation: sapito 5s infinite; }
 
-@keyframes morph {
+@keyframes sapito {
   0% {
-    background-color: #465DC2; }
+    background-color: #c2466f; }
   33% {
-    background-color: #142fa8; }
+    background-color: #a618d1; }
   66% {
-    background-color: #0632f7; }
+    background-color: #b32fff; }
   100% {
-    background-color: #0c1852; } }
-
-.notDest h3 {
-  grid-column: 1 / 2 span;
-  grid-row: 1fr; }
+    background-color: #c444ff; } }
 
 /*Fin de contenido de Noticias*/
-/*Media query del carousel*/
-@media only screen and (max-width: 425px) {
-  .ultNot {
-    display: flex;
-    flex-direction: column; }
-  .ultNot h1 {
-    font-size: 2rem; }
-  .ultNot p {
-    font-size: 1.5rem;
-    color: #000; }
-  /*Noticia destacada*/
-  .notDest {
-    display: flex;
-    flex-direction: column;
-    background-color: #465DC2;
-    padding: 5rem;
-    width: 100%; }
-  .notDest h3 {
-    grid-column: 1 / 2 span;
-    grid-row: 1fr; }
-  /*Fin de contenido de Noticias*/ }
+.estrenos p {
+  font-family: "Poppins";
+  font-size: 2rem; }
+
+.estrenos__subtitulos {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #E173EB; }
+  .estrenos__subtitulos__sub {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #465DC2;
+    font-weight: 600; }
+
+.estrenos__subtitulos:focus {
+  color: #000; }
 
 .fomCon {
-  display: flex;
-  flex-direction: row;
-  background-color: #AB51FF;
-  padding: 5rem;
+  font-family: "Poppins";
   font-size: 1.6rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif; }
-  .fomCon .formtext:focus {
+  font-family: "Poppins";
+  font-weight: 600;
+  background-color: #E173EB;
+  color: #000;
+  padding: 5rem; }
+  .fomCon _:focus {
     transform: scale(1.2); }
+  .fomCon h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+    color: #000; }
+  .fomCon .formtext {
+    font-family: "Poppins";
+    font-size: 1.6rem; }
+
+.reglasdelaPag h1 {
+  font-family: "M PLUS 1";
+  font-size: 4rem;
+  font-weight: 600;
+  color: #AB51FF; }
+
+.reglasdelaPag p, .reglasdelaPag li {
+  font-family: "Poppins";
+  font-size: 2rem;
+  color: #FFDBDF;
+  text-align: justify; }
 
 .boton, .piecito .pieBtm, .boton--anime, .boton--noticia {
   text-decoration: none;
   padding: 1.5rem;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   color: #000;
   background-color: #E173EB;
   font-weight: 700;

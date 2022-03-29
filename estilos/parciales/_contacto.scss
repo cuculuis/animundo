@@ -1,14 +1,27 @@
 
 .fomCon {
-    display: flex;
-    flex-direction: row;
-    background-color: #AB51FF;
+    font-family: map-get($tipo-letra , "contenido");
+    font-size: map-get($letras , "pequeña");
+    font-family: map-get($tipo-letra, "subsubtitulo");
+    font-weight: 600;
+    background-color: map-get($colors, "segundo");
+    color: map-get($colors, "black");
     padding: 5rem;
-    font-size: $font-size-content;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     
-    .formtext:focus {
+    _:focus {
         transform: scale(1.2);
-        
     }
+
+    h1 {
+        @include subtitulos;
+        @include ultracentrado;
+        font-weight: 700;
+        color: map-get($colors, "black")
+        }
+    
+    .formtext {
+        font-family: map-get($tipo-letra, "subsubtitulo");
+        font-size: map-get($letras, "pequeña");
+    }
+    
 }

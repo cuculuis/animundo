@@ -1,25 +1,34 @@
-//Variables//
-@import "./variables";
-
-
 //Inicio del footer//
 .piecito {
     width: 100%;
     padding-top: 2rem;
     padding-bottom: 2rem;
     background-color: map-get($colors,"black" );
-    //Boton volver arriba//
+    @include piedepagina;
+    color: map-get($colors, "tercero");
+    font-weight: 500;
     
+    .DerechosAu {
+        @include piedepagina;
+        color: map-get($colors, "tercero");
+        font-weight: 500;
+    }
+
+    ul {
+        @include piedepagina;
+        color: map-get($colors, "tercero");
+        font-weight: 500;
+    }
+
+    //Boton volver arriba//
     .pieBtm{
         @extend .boton;
-        text-decoration: none;
+        a {
+            font-weight: 900;
+            text-decoration-line: none;
+            color: map-get($colors, "black" );
+        }
     }
-}
-
-footer {
-    font-size: $font-size-links-foot;
-    color: map-get($colors, "tercero");
-    font-family: 'Montserrat', sans-serif;
 }
 
 footer ul {

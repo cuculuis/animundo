@@ -1,0 +1,41 @@
+
+.anime{
+    background-color: map-get($colors , "segundo" );
+    
+    &__aniTitle {
+        @include subtitulos;
+        @include ultracentrado;
+        color: map-get($colors, "black" );
+        font-weight: 800;
+        
+    }
+
+    &__fondo{
+        background-color: map-get($colors, "black" );
+    }
+
+    &__fondo:hover{
+            color: map-get($colors, "black" );
+            animation: morph 3s infinite;
+        }
+        
+        @keyframes morph {
+            0% { background-color: #465DC2; }
+            33% { background-color: #142fa8; }
+            66% { background-color: #0632f7; }
+            100% { background-color: #0c1852; }
+        }
+    }
+
+    .titAnimenew {
+        font-size: map-get($letras, "pequeña" );
+        font-weight: 700;
+    }
+    p {
+        font-size: 1.4rem;
+    }
+    .linkanimenew {
+        text-decoration: none;
+        color: map-get($colors, "segundo" );
+    }
+

@@ -77,22 +77,22 @@
                     <!--Nombre y apellido del usuario-->
                     <div class="col">
                         <div class="col">
-                            <input type="text" class="form-control formtext" placeholder="Nombre" aria-label="First name">
+                            <input type="text" class="form-control formtext" placeholder="Nombre" aria-label="First name" required>
                         </div>
                         <div class="col">
-                            <input type="text" class="form-control formtext" placeholder="Apellido" aria-label="Last name">
+                            <input type="text" class="form-control formtext" placeholder="Apellido" aria-label="Last name" required>
                         </div>
                     </div>
                     
                     <!--Sexo del usuario-->
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" required>
                         <label class="form-check-label" for="flexRadioDefault1">
                             Femenino
                         </label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" required>
                         <label class="form-check-label" for="flexRadioDefault2">
                             Masculino
                         </label>
@@ -101,13 +101,13 @@
                     <!--Email del usuario-->
                     <div class="mb-3">
                         <label for="" class="form-label formtext">Email</label>
-                        <input type="email" placeholder="Correo electronico"class="form-control formtext" id="" aria-describedby="emailHelp">
+                        <input type="email" placeholder="Correo electronico"class="form-control formtext" id="" aria-describedby="emailHelp" required>
                     </div>
                     <div class="mb-3">
                     
                     <!--Edad del usuario-->    
                     </div>
-                        <select id="inputState" class="form-select">
+                        <select id="inputState" class="form-select formtext" required>
                             <option disable selected>Edad</option>
                             <option value="">0 a 18</option>
                             <option value="">18 a 30</option>
@@ -117,19 +117,19 @@
                     <!--Sugerencia del usuario-->
                     <div class="mb-3 text-center">
                         <label for="exampleFormControlTextarea1" class="form-label">Cuentanos cómo fue tu experiencia y qué te gustaría que mejoremos</label>
-                        <textarea class="form-control formtext" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea class="form-control formtext" id="exampleFormControlTextarea1" rows="3" required></textarea>
                     </div>
     
                     <!--Boton de check-->
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <div class="form-check justify-content-center">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
                         <label class="form-check-label" for="flexCheckDefault">
                             Acepto los terminos y condiciones.
                         </label>
                     </div>
                     
                     <!--Boton de enviar-->
-                    <button type="submit" class="btn btn-dark">Enviar</button>
+                    <button type="submit" class="boton--anime btn btn-dark">Enviar</button>
                 </form>
             </div>
         </section>

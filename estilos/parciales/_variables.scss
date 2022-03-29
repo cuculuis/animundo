@@ -1,3 +1,5 @@
+////////////MAPAS////////////
+
 //paleta de colores//
 $colors: (
     "primero": #AB51FF,
@@ -9,20 +11,63 @@ $colors: (
     "white": #fff,
 );
 
-//Tamaño de letra//
-$letras: (
-    "pequeña": 1.3rem,
-    "mediana": 2rem,
-    "grande": 3rem,
-    "extragrande": 5rem,
+//Tipo de fuente//
+$tipo-letra: (
+    "titulo": 'M PLUS 1',
+    "subTitulo": 'Dongle',
+    "subsubtitulo": 'Poppins',
+    "contenido": 'Poppins',
+    "links": 'Roboto',
 );
 
+//Tamaño de letra//
+$letras: (
+    "pequeña": 1.6rem,
+    "mediana": 2rem,
+    "grande": 2.5rem,
+    "extragrande": 4rem,
+);
+
+////////////MIXINGS////////////
 //Reset cero//
 @mixin todocero {
     margin: 0px;
     border: 0px;
     padding: 0px;
     box-sizing: border-box
+}
+
+//para centrar//
+@mixin ultracentrado {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+//titulos//
+@mixin titulos {
+    font-family: map-get($tipo-letra , "titulo");
+    font-size: map-get($letras , "extragrande");
+    font-weight: 600;
+}
+
+//Subtitulos//
+@mixin subtitulos {
+    font-family: map-get($tipo-letra, "subtitulo");
+    font-size: map-get($letras , "grande");
+    font-weight: 400;
+}
+
+//contenido//
+@mixin contenido {
+    font-family: map-get($tipo-letra , "contenido");
+    font-size: map-get($letras , "mediana");
+}
+
+//para footer//
+@mixin piedepagina {
+    font-family: map-get($tipo-letra , "links");
+    font-size: map-get($letras , "pequeña" );
 }
 
 //tamaño de letra en footer//

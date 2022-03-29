@@ -1,0 +1,21 @@
+.estrenos {
+
+    p {
+        @include contenido;
+    }
+
+    &__subtitulos {
+        @include subtitulos;
+        color: map-get($colors ,"segundo");
+
+        &__sub {
+            @include subtitulos;
+            color: map-get($colors , "quinto");
+            font-weight: 600;
+        }
+    }
+    
+    &__subtitulos:focus{
+        color: map-get($colors, "black" )
+    }
+}

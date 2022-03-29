@@ -1,0 +1,13 @@
+.reglasdelaPag {
+        h1 {
+            @include titulos;
+            color: map-get($colors , "primero" );
+        }
+
+        p, li{
+            font-family: map-get($tipo-letra , "contenido");
+            font-size: map-get($letras , "mediana");
+            color: map-get($colors , "tercero");
+            text-align: justify;
+        }
+}
